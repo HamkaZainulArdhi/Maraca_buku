@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="shortcut icon" href="/img/buku-tab.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
+    <title>Maraca Buku | Lapak Baca Gratis</title>
+  </head>
+  <body style="height: 400px">
+    <!-- spiner -->
+
+    <!-- spiner end -->
+
+    <!-- navbar box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px; -->
+    <nav
+      class="navbar navbar-expand-lg sticky-top"
+      style="background-color: #dff5ff"
+    >
+      <div class="container">
+        <img src="/img/logo.png" width="150" alt="image" />
+        <a class="navbar-brand p-3" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- navbar -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      style="background-color: #dff5ff"
+    >
+      <div class="carousel-inner container">
+        <div class="carousel-item active">
+          <img
+            src="img/hatta.png"
+            class="d-block w-100"
+            alt="..."
+            style="border-radius: 10px"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/hatta.png"
+            class="d-block w-100"
+            alt="..."
+            style="border-radius: 10px"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/hatta.png"
+            class="d-block w-100"
+            alt="..."
+            style="border-radius: 10px"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/hatta.png"
+            class="d-block w-100"
+            alt="..."
+            style="border-radius: 10px"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <div class="d-flex gap-1 justify-content-end container mt-3">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+
+    <!-- <div class="container d-flex icon justify-content">
+        <a
+          href="https://www.instagram.com/maraca_buku?igsh=MXdnb3JnM3VycXg0bw=="
+          class="mx-2"
+          ><i class="fa-brands fa-instagram"></i>
+          <figcaption class="instagram">maraca_buku</figcaption></a
+        >
+      </div> -->
+    <!-- card -->
+    <div
+      class="container-fluid py-5"
+      style="
+        margin-bottom: -3rem;
+        background-color: #dff5ff;
+        border-bottom-right-radius: 80px;
+        border-bottom-left-radius: 80px;
+      "
+    >
+      <div class="container">
+        <div class="row g-4 mb-5">
+          <div class="col-lg-8 col-xl-90">
+            <div
+              class="row g-4"
+              style="
+                /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                background-color: #ffffff !important; */
+              "
+            >
+              <div
+                id="imageCarousel"
+                class="carousel slide col-lg-8"
+                data-bs-ride="carousel"
+                style="width: 100rem"
+              >
+                <div class="carousel-inner border rounded">
+                  <div class="carousel-item active">
+                    <a href="#">
+                      <img
+                        src="/img/beranda1.jpeg"
+                        class="img-fluid rounded"
+                        alt="Image 1"
+                      />
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="#">
+                      <img
+                        src="/img/beranda2.jpeg"
+                        class="img-fluid rounded"
+                        alt="Image 2"
+                      />
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="#">
+                      <img
+                        src="img/beranda3.jpeg"
+                        class="img-fluid rounded"
+                        alt="Image 3"
+                      />
+                    </a>
+                  </div>
+                </div>
+
+                <!-- no slide-->
+
+                <!-- komtrol slide -->
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#imageCarousel"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#imageCarousel"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-next-icon"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 d-inline mt-0">
+            <h1>Saran Buku</h1>
+            <div
+              class="line"
+              style="background-color: #008aa5; height: 7px; width: 18rem"
+            ></div>
+            <div
+              class="line"
+              style="background-color: #008aa5; height: 4px"
+            ></div>
+            <div class="scroll-book" style="width: 100%; overflow-x: scroll">
+              <div class="d-flex gap-3 pt-4">
+                <figure class="item">
+                  <img src="/img/buku1.jpg" />
+                  <figcaption class="position">
+                    <h6 style="font-size: small">
+                      Teruslah bodo jangan pintar
+                      <span style="font-style: italic">Karya : hamka</span>
+                    </h6>
+                  </figcaption>
+                </figure>
+                <figure class="item">
+                  <img src="/img/buku1.jpg" />
+                  <figcaption>hamka</figcaption>
+                </figure>
+                <figure class="item">
+                  <img src="/img/buku1.jpg" />
+                  <figcaption>hamka</figcaption>
+                </figure>
+                <figure class="item">
+                  <img src="/img/buku1.jpg" />
+                  <figcaption>hamka</figcaption>
+                </figure>
+              </div>
+            </div>
+            <h1>Acara</h1>
+            <div
+              class="line"
+              style="background-color: #008aa5; height: 7px; width: 18rem"
+            ></div>
+            <div
+              class="line"
+              style="background-color: #008aa5; height: 4px"
+            ></div>
+            <div
+              class="container mt-3"
+              style="background-color: #ffffff !important"
+            >
+              <div class="header bg-primary" style="height: 20px"></div>
+              <div class="event-container row">
+                <div class="col-md-2 event-date">
+                  <div class="day">15</div>
+                  <div class="month">OCT</div>
+                </div>
+                <div class="col-md-10 event-details">
+                  <h5>Perlombaan Karya tulis</h5>
+                  <div class="time">
+                    <i class="far fa-clock"></i> 09:00 - 12:00 WIB
+                  </div>
+                  <div class="location">
+                    <i class="fas fa-map-marker-alt"></i> Hybrid
+                  </div>
+                </div>
+              </div>
+              <div class="event-container row">
+                <div class="col-md-2 event-date">
+                  <div class="day">27</div>
+                  <div class="month">AUG</div>
+                </div>
+                <div class="col-md-10 event-details">
+                  <h5>Lapak baca Rutinan</h5>
+                  <div class="time">
+                    <i class="far fa-clock"></i> 09:30 - 11:30 WIB
+                  </div>
+                  <div class="location">
+                    <i class="fas fa-map-marker-alt"></i> Hybrid
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- card -->
+
+    <!-- progress -->
+    <div class="container">
+      <h1 class="text-start">Layanan Maraca Buku Online</h1>
+      <div
+        class=""
+        style="background-color: #008aa5; height: 7px; max-width: 520px"
+      ></div>
+      <div class="mx-auto" style="background-color: #008aa5; height: 4px"></div>
+    </div>
+
+    <div class="container justify-content-center d-flex mt-3">
+      <div
+        class="row row-cols-auto text-center g-4 layanan d-flex flex-row flex-nowrap overflow-auto text-center py-3"
+      >
+        <div class="col mb-4">
+          <a href="#">
+            <img
+              src="/img/book.png"
+              alt="Koleksi Buku"
+              class="img-fluid mb-2"
+            />
+            <h4>Koleksi Buku</h4>
+          </a>
+        </div>
+        <div class="col mb-4">
+          <a href="#">
+            <img
+              src="/img/book2.png"
+              alt="Peminjaman Buku"
+              class="img-fluid mb-2"
+            />
+            <h4>Peminjaman Buku</h4>
+          </a>
+        </div>
+        <div class="col mb-4">
+          <a href="#">
+            <img src="/img/blog.png" alt="Blog Media" class="img-fluid mb-2" />
+            <h4>Blog Media</h4>
+          </a>
+        </div>
+        <div class="col mb-4">
+          <a href="#">
+            <img src="/img/e-book.png" alt="E-Book" class="img-fluid mb-2" />
+            <h4>E-Book</h4>
+          </a>
+        </div>
+        <div class="col mb-4">
+          <a href="#">
+            <img src="/img/e-book.png" alt="E-Book" class="img-fluid mb-2" />
+            <h4>E-Book</h4>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div
+        class=""
+        style="background-color: #008aa5; height: 7px; max-width: 520px"
+      ></div>
+      <div class="mx-auto" style="background-color: #008aa5; height: 4px"></div>
+    </div>
+    <section class="py-3">
+      <div class="container container-fluid">
+        <div class="row justify-content-center gap-4">
+          <!-- Kolom Besar (Biru) -->
+          <div
+            class="col-lg-6 col-md-5 col-12 banner-ad bg-info d-flex align-items-center justify-content-center text-center"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            style="
+              background: url('images/banner-ad-1.jpg') no-repeat;
+              background-size: cover;
+              height: 424px;
+            "
+          >
+            <div class="text-white">
+              <h3 class="fw-bold">Ingin Berbagi Pengatahuan ?</h3>
+              <p>kami Menerima Buku yang telah selesai anda baca</p>
+              <a href="#" class="btn-link text-white">Shop Now</a>
+            </div>
+          </div>
+
+          <!-- Kolom Kanan (Hijau dan Merah) -->
+          <div class="col-lg-5 col-md-6 col-12">
+            <div class="row g-4">
+              <!-- Hijau -->
+              <div
+                class="col-12 bg-success-subtle banner-ad d-flex align-items-center justify-content-center text-center"
+                data-aos="fade-left"
+                data-aos-duration="1500"
+                style="
+                  background: url('images/banner-ad-2.jpg') no-repeat;
+                  background-size: cover;
+                  height: 200px;
+                "
+              >
+                <div class="text-white">
+                  <h3 class="fw-bold">Daftar Lomba Puisi SMP/MTS</h3>
+                  <p>Lorem, ipsum dolor.</p>
+                  <a href="#" class="btn-link text-white">Daftar</a>
+                </div>
+              </div>
+
+              <!-- Merah -->
+              <div
+                class="col-12 bg-danger banner-ad d-flex align-items-center justify-content-center text-center"
+                data-aos="fade-left"
+                data-aos-duration="1500"
+                style="
+                  background: url('images/banner-ad-3.jpg') no-repeat;
+                  background-size: cover;
+                  height: 200px;
+                "
+              >
+                <div class="text-white">
+                  <h3 class="fw-bold">Lomba Cerpen Sekecamtan Bantarkawung</h3>
+                  <p>Lorem, ipsum dolor.</p>
+                  <a href="#" class="btn-link text-white">Daftar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-lg">
+        <div
+          class="bg-secondary text-light py-5 my-5 mt-1"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="1000"
+          style="
+            background: url('images/banner-newsletter.jpg') no-repeat;
+            background-size: cover;
+          "
+        >
+          <div class="container" id="contact">
+            <div class="row justify-content-center">
+              <div class="col-md-5 p-3">
+                <div class="section-header">
+                  <h2 class="section-title display-5 text-light">
+                    Ingin Artikel Mu di Publish disini ?
+                  </h2>
+                </div>
+                <p>Daftarkan dirimu segera</p>
+              </div>
+              <div class="col-md-5 p-3">
+                <form>
+                  <div class="mb-3">
+                    <label for="name" class="form-label d-none">Nama</label>
+                    <input
+                      type="text"
+                      class="form-control form-control-md rounded-0"
+                      name="name"
+                      id="name"
+                      placeholder="Nama"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label d-none">Alamat</label>
+                    <input
+                      type="email"
+                      class="form-control form-control-md rounded-0"
+                      name="email"
+                      id="email"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-dark btn-md rounded-0">
+                     Daftar
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container mt-4">
+      <h2 class="mb-3">Maraca Artikel</h2>
+      <div
+        class=""
+        style="background-color: #008aa5; height: 7px; max-width: 520px"
+      ></div>
+      <div class="mx-auto" style="background-color: #008aa5; height: 4px"></div>
+      <div class="row row-cols-1 row-cols-md-2 g-3 mt-1">
+        <div class="col">
+          <div>
+            <h3 class="fw-bold fs-5">Judul Berita 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu
+              ex nec justo gravida luctus.
+            </p>
+            <p class="text-secondary small">
+              Created At: 21 Nov 2024
+              <a href="#" class="btn btn-primary btn-sm float-end">&raquo;</a>
+            </p>
+          </div>
+          <hr />
+        </div>
+        <div class="col">
+          <div>
+            <h3 class="fw-bold fs-5">Judul Berita 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu
+              ex nec justo gravida luctus.
+            </p>
+            <p class="text-secondary small">
+              Created At: 1 Nov 2024
+              <a href="#" class="btn btn-primary btn-sm float-end">&raquo;</a>
+            </p>
+          </div>
+          <hr />
+        </div>
+        <div class="col">
+          <div>
+            <h3 class="fw-bold fs-5">Judul Berita 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu
+              ex nec justo gravida luctus.
+            </p>
+            <p class="text-secondary small">
+              Created At: 31 Okt 2024
+              <a href="#" class="btn btn-primary btn-sm float-end">&raquo;</a>
+            </p>
+          </div>
+          <hr />
+        </div>
+        <div class="col">
+          <div>
+            <h3 class="fw-bold fs-5">Judul Berita 4</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu
+              ex nec justo gravida luctus.
+            </p>
+            <p class="text-secondary small">
+              Created At: 28 Okt 2024
+              <a href="#" class="btn btn-primary btn-sm float-end">&raquo;</a>
+            </p>
+          </div>
+          <hr />
+        </div>
+      </div>
+      <div class="d-flex justify-content-end mt-3">
+        <button class="btn btn-warning text-dark fw-bold float-end">
+          Berita Selanjutnya
+        </button>
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="row">
+        <!-- Kolom Galeri -->
+        <div class="col-md-8">
+          <h3 class="mb-3">Galeri</h3>
+          <div
+            class=""
+            style="background-color: #008aa5; height: 7px; max-width: 200px"
+          ></div>
+          <div
+            class="mx-auto"
+            style="background-color: #008aa5; height: 4px"
+          ></div>
+          <!-- Konten galeri -->
+          <div id="splide" class="splide mt-3" style="height: 200px">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide col-4">
+                  <img
+                    src="img/image.png"
+                    alt="Galeri 1"
+                    class="img-fluid h-100"
+                  />
+                </li>
+                <li class="splide__slide col-4">
+                  <img
+                    src="img/image.png"
+                    alt="Galeri 1"
+                    class="img-fluid h-100"
+                  />
+                </li>
+                <li class="splide__slide col-4">
+                  <img
+                    src="img/image.png"
+                    alt="Galeri 1"
+                    class="img-fluid h-100"
+                  />
+                </li>
+                <li class="splide__slide col-4">
+                  <img
+                    src="img/image.png"
+                    alt="Galeri 1"
+                    class="img-fluid h-100"
+                  />
+                </li>
+                <li class="splide__slide col-4">
+                  <img
+                    src="img/image.png"
+                    alt="Galeri 1"
+                    class="img-fluid h-100"
+                  />
+                </li>
+                <li class="splide__slide col-4">
+                  <img
+                    src="img/image.png"
+                    alt="Galeri 1"
+                    class="img-fluid h-100"
+                  />
+                </li>
+                <li class="splide__slide col-4">
+                  <img
+                    src="img/image.png"
+                    alt="Galeri 1"
+                    class="img-fluid h-100"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kolom Video -->
+        <div class="col-md-4">
+          <h3 class="mb-3">Video</h3>
+          <div
+            class=""
+            style="background-color: #008aa5; height: 7px; max-width: 200px"
+          ></div>
+          <div
+            class="mx-auto"
+            style="background-color: #008aa5; height: 4px"
+          ></div>
+          <!-- Konten video -->
+          <div class="ratio ratio-16x9 mt-3">
+            <iframe
+              src="https://www.youtube.com/embed/your-video-id"
+              title="YouTube video"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- progress -->
+
+    <!-- footer sebelum -->
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-4">
+          <h3 class="mb-3 mt-3">Video</h3>
+          <div
+            class=""
+            style="background-color: #008aa5; height: 7px; max-width: 200px"
+          ></div>
+          <div class="mx-auto" style="background-color: #008aa5"></div>
+          <!-- Konten video -->
+          <div class="mt-3">
+            <img src="img/maraca.jpg" alt="" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-md-8">
+          <h3 class="mb-3 mt-3">Home Base</h3>
+          <div
+            class=""
+            style="background-color: #008aa5; height: 7px; max-width: 200px"
+          ></div>
+          <div
+            class="mx-auto"
+            style="background-color: #008aa5; height: 4px"
+          ></div>
+          <div class="mt-3 ratio ratio-16x9">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d494.7861766545617!2d108.91034521293585!3d-7.207786916890567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f85fc1c967793%3A0x21dd9e8e6af6b94c!2sWahyu%20Motor!5e0!3m2!1sen!2sid!4v1732806973641!5m2!1sen!2sid"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="d-grid gap-2 mt-3">
+            <button
+              class="btn btn-outline-primary bi bi-instagram"
+              type="button"
+            >
+              <i class="fa-brands fa-instagram"></i> Lihat Profil Penuh Di
+              instagram Kami
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="py-4 rounded-top-4 mt-5 " style="background-color: #008aa5">
+      <div class="container-lg">
+        <div class="row text-white">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="footer-menu">
+              <img src="img/logo.png" width="240" alt="logo" />
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-6 ">
+            <div class="footer-menu ">
+              <h5 class="widget-title">Maraca Buku</h5>
+              <p>
+                 Maraca Buku adalah platform digital yang menyediakan aksesibilitas fleksibel ke koleksi eBook, audiobook, jurnal, arsip, dan referensi, mendukung pembelajaran interaktif berbasis teknologi.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="footer-menu">
+              <h5 class="widget-title">Temukan Kami</h5>
+              <div class="mt-3" action="index.html">
+                <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-location-dot"></i> Alun Alun
+                  Bantarkawung</button>
+                <br>
+                <a href="https://github.com" type="button" class="btn btn-outline-light mt-3"><i class="fa-solid fa-location-dot"></i> Dukuh Tabet, Desa Bangbayang
+                  </a>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+       <hr>
+        <div class="container-lg">
+        <div class="row">
+          <div class="col-md-6 copyright">
+            <p>© 2024 Maraca Buku. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 credit-link text-start text-md-end">
+            <p>
+              Our Developer website
+              <a href="https://my-portofolio-website-ham.vercel.app/" class="text-light">Ham .</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  </body>
+</html>

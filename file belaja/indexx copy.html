@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project stress</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+      }
+      .image-container {
+        position: relative;
+        width: 400px;
+      }
+
+      /* Initial image style */
+      .image-container img {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      /* Hide the first image on hover */
+      .image-container:hover img:first-child {
+        opacity: 0;
+      }
+
+      /* Show the second image only on hover */
+      .image-container img:last-child {
+        opacity: 0;
+      }
+      .image-container:hover img:last-child {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-container">
+      <!-- Initial image -->
+      <img src="/img/model3.png" alt="Model Image 1" />
+
+      <!-- Image displayed on hover -->
+      <img src="/img/model4.png" alt="Model Image 2" />
+    </div>
+  </body>
+</html>
